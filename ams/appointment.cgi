@@ -26,7 +26,10 @@ my $dateset = param('app_date') if (param('app_date'));
 my $descset = param('description') if (param('description'));
 my $searchset ='';
 	$searchset = url_param('search') if (url_param('search'));
-
+	
+my $stmt = q/create table if not exists appointment (app_date datetime, description varchar(100))/;
+my $sth = $dbh->prepare($stmt);
+$sth->execute();
 
 # if there is params it's a POST, create new record
 if ($dateset && $descset) {
