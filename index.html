@@ -82,6 +82,22 @@
 	<script type="text/javascript" src="resources/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
 	<script type="text/javascript" src="resources/js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
 	<script type="text/javascript">
+	
+		function validateForm(){
+			var date = $("#app_date").val();
+				if (date == "") {
+					alert("Date must be filled out");
+					$("#app_date").focus();
+					return false;
+				}
+				var desc = $("#description").val();
+				if (desc == "") {
+					alert("Description must be filled out");
+					$("#description").focus();
+					return false;
+				}
+				
+			}
 
 		$(document).ready(function getAppointments() {
 			var json;
@@ -102,14 +118,7 @@
 					}
 				}
 			});
-			function validateForm(){
-				var desc = $("#description").val();
-				if (desc == "") {
-					alert("Description must be filled out");
-					$("#description").focus();
-					return false;
-				}
-			}
+			
 			function getmonth(month){
                 switch(month){
                     case "01": return "Jan ";
