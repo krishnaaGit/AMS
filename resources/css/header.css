@@ -1,0 +1,13 @@
+#lnkLogout, #lnkLogin{
+	position: fixed;
+	top: 140px;
+	right: 10px;
+}
+
+.actionButton {
+	background-color: #E67A00;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}

@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	background-color: rgba(187, 188, 191, 0.05);
+}
+
+h1 {
+	margin: 10px;
+}
+
+.centered_parent {
+	position: relative;
+	width: 50%;
+	margin: auto;
+}
+
+.mid_width {
+	width: 300px;
+}
+
+.input_width {
+	width: 201px;
+}
+
+.background {
+	background-color: #bbbcbf;
+}
+
+.a-padding-medium {
+	padding: 14px 18px;
+}
+
+.centered_child {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 6px;
+}
+
+.leftSection {
+	position: float;
+	width: 30%;
+	float: left;
+}
+
+.rightSection {
+	width: 70%;
+	float: left;
+}
+
+.warning {
+	text-align: center;
+	color: red;
+	font-size: 12px;
+}
+
+input {
+	border-width: 2px;
+	height: 30px;
+	margin: 10px;
+	margin-left: 20px;
+	border-radius: 8px;
+}
+
+label {
+	border-width: 2px;
+	margin: 10px;
+	margin-left: 20px;
+}
+
+.button {
+	width: 100px;
+	border-radius: 8px;
+	width: 200px;
+}
+
+.div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.sideRight_column {
+	float: right;
+	width: 30%;
+	height: 100%;
+}
+
+.sideLeft_column {
+	float: left;
+	width: 30%;
+	height: 100%;
+}
+
+tr {
+	line-height: 30px;
+	padding: 10px;
+}
+
+td {
+	padding: 5px;
+}
+
+tr:nth-child(even) {
+	background-color: rgba(187, 188, 191, 0.24);
+}
+
+thead {
+	font-size: 18px;
+	background-color: rgba(187, 188, 191, 0.24);
+}
+
+table .left {
+	text-align: left;
+}
+
+table .right {
+	text-align: right;
+}
+
+.fullPageMessage {
+	position: relative;
+	height: 500px;
+}
+
+.fullPageMessage p {
+	position: absolute;
+	top: 150px;
+	padding: 30px;
+	font-size: 30px;
+}
+
+.errorDiv {
+	color: red;
+	font-size: 18px;
+}
+
+.header {
+	/* background-image: url("../images/banner.jpg"); */
+	height: 100px;
+	margin-top: -8px;
+	backgroundPosition: 0px 0px;
+}
+.afterheader{
+	margin-top:100px;
+}
+.userInfo {
+	float: left;
+}
+
+.image
+{
+	float:left;
+	max-height: 200px;
+	max-width: 200px;
+}
+.viewport {
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+	font-family: "Amazon Ember", Arial, sans-serif;
+}
+.alignleft
+{
+	text-align: left;
+}
